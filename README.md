@@ -30,6 +30,19 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 ### Setup
+Clone this repo into your local device by running the following command on your Terminal:
+```
+git clone git@github.com:JohnFTitor/awesomeBooksES6.git
+```
+
+That will create a folder with the project inside it. Navigate into it to access the files.
+
+Also remember to run:
+```
+npm install
+```
+This will update the dependencies and download necessary files in case you don't have them.
+
 
 ### Install
 
