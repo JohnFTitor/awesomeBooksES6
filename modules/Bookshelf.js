@@ -42,8 +42,8 @@ export default class Bookshelf {
       this.storeData();
       span.textContent = `${book.title} was Successfully Added`;
       this.displayBooks(this.books);
-      document.getElementById('book-title-input').value = "";
-      document.getElementById('book-author-input').value = "";
+      document.getElementById('book-title-input').value = '';
+      document.getElementById('book-author-input').value = '';
     }
   }
 }
