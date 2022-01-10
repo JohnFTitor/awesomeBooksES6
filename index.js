@@ -1,5 +1,5 @@
 import Bookshelf from './modules/Bookshelf.js';
-import { DateTime } from "/node_modules/luxon/src/luxon.js";
+import { DateTime } from './node_modules/luxon/src/luxon.js';
 
 const bookShelf = new Bookshelf();
 const addButton = document.getElementById('add-book-button');
