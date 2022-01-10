@@ -2,8 +2,11 @@ import Bookshelf from './modules/Bookshelf.js';
 import { startTime, toggleDisplay } from './modules/Navigation.js';
 
 const bookShelf = new Bookshelf();
-const addButton = document.getElementById('add-book-button');
-addButton.addEventListener('click', () => { bookShelf.addBook(); });
+const addButton = document.getElementById('book-form');
+addButton.addEventListener('submit', (e) => {
+  e.preventDefault();
+  bookShelf.addBook();
+});
 bookShelf.displayBooks();
 
 // Navigation
