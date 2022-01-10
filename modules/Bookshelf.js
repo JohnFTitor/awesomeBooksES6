@@ -34,12 +34,16 @@ export default class Bookshelf {
   }
 
   addBook() {
+    const span = document.getElementById('success-message');
     const book = new Book();
     if (JSON.stringify(this.books[this.books.length - 1]) !== JSON.stringify(book)
             && book.title !== '' && book.author !== '') {
       this.books.push(book);
       this.storeData();
+      span.textContent = `${book.title} was Successfully Added`;
       this.displayBooks(this.books);
+      document.getElementById('book-title-input').value = "";
+      document.getElementById('book-author-input').value = "";
     }
   }
 }
